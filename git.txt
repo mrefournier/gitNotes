@@ -1,0 +1,111 @@
+===========================
+Get up and running with git
+===========================
+git --version
+
+
+git config --global user.name "<your name>"
+git config --global user.email "<your mail>"
+
+git config --list
+
+======================================
+overwrite config in a specific project
+======================================
+***do not use --global
+git config user.name "yourname"
+git config user.email "yourname@email.com"
+
+================
+list of commands
+================
+man git
+git help (option) ie.: git help config
+
+===================
+Initialise git repo
+===================
+cd to folder or master folder
+git init
+
+========================================
+add all files in directory to be tracked
+========================================
+git add .
+git commit -m "first commit"
+
+git remote add origin <git address to repo>
+git push origin master
+
+==============================
+Files tracked by git
+committed > modified > staged
+==============================
+Basic commands of everyday git
+==============================
+git status
+
+git add <file> (if you modify a file after adding it you have to add it again)
+
+short status:
+git status -s or --short
+
+git diff --staged
+git diff --staged --no-renames (prevents git from thinking 2 different files are the same when files are empty or new?)
+git diff
+
+run diffmerge tool on unstaged files:
+git difftool 
+
+=======
+git log
+=======
+git log
+
+git log -1 (limits log output)
+
+git log --oneline
+
+git log --stat
+
+git log --patch (detailed view)
+
+=============
+remove a file
+=============
+git rm <file name>
+
+============
+untrack file
+============
+git rm --cached <filename>
+
+===========
+rename file
+===========
+git mv <file name> <new file name>
+
+========
+branches
+========
+Create a new branch:
+git checkout -b new_branch_name
+
+=====================
+git merge into master 
+=====================
+git checkout master
+git merge <branch name>
+
+=========
+git reset !!!carefull!!!
+=========
+git reset --soft (moves changes back to staging)
+git reset --mixed (moves changes back to the working directory)
+git reset --hard (destructive moves changes to the trash)
+
+example reset back to origin master:
+git log --online (to see hash for origin master)
+git reset --mixed <origin master hash>
+git add .
+git commit -m "title" -m "description"
