@@ -47,8 +47,8 @@ git status -s or --short
 
 git diff --staged
 
-run diffmerge tool
-
+run diffmerge tool on unstaged files (might need to run git reset first << carefull!!!!)
+git difftool 
 
 
 
