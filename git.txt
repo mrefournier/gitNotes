@@ -1,0 +1,71 @@
+Get up and running with git
+===========================
+git --version
+
+git config --global user.name "Eric Fournier"
+git config --global user.email "email@email.com"
+
+git config --list
+...
+
+overwrite config in a specific project
+do not use --global
+git config user.name "yourname"
+git config user.email "yourname@email.com"
+
+list of commands
+man git
+git help (option) ie.: git help config
+
+Initialise git repo
+cd to folder or master folder
+git init
+
+add all files in directory to be tracked
+git add .
+and the 
+git commit -m "first commit"
+
+git remote add origin <address>
+
+git push -u origin master
+
+==============================
+Files tracked by git
+committed > modified > staged
+
+==============================
+Basic commands of everyday git
+==============================
+git status
+
+if you modify a file after adding it you have to add it again
+git add <file>
+
+short status
+git status -s or --short
+
+git diff --staged
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
