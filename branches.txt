@@ -15,6 +15,7 @@ rename branch:
 git branch -m <old branch name> <new branch name>
 
 delete branch:
+<<<<<<< HEAD
 git branch -d <branch name>
 
 force delete branch -D:
@@ -53,6 +54,3 @@ cherry picking:
 git cherry-pick
 
 more notes to come...
-
-
-
