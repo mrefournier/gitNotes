@@ -46,9 +46,12 @@ short status
 git status -s or --short
 
 git diff --staged
+git diff --staged --no-renames (prevents git from thinking 2 different files are the same when files are empty or new?)
+git diff
 
 run diffmerge tool on unstaged files (might need to run git reset first << carefull!!!!)
 git difftool 
+
 
 
 
