@@ -1,0 +1,14 @@
+list your branches:
+git branches
+
+create and switch to new branch:
+git checkout -b <new branch name>
+
+switch to branch:
+git checkout <branch name>
+
+rename branch:
+git branch -m <old branch name> <new branch name>
+
+delete branch:
+git branch -d <branch name>
