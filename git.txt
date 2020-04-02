@@ -85,7 +85,10 @@ rename file
 ===========
 git mv <file name> <new file name>
 
-
+========
+branches
+========
+git checkout -b new_branch_name
 
 
 
