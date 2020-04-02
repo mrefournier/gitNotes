@@ -88,7 +88,24 @@ git mv <file name> <new file name>
 ========
 branches
 ========
+Create a new branch:
 git checkout -b new_branch_name
 
+=====================
+git merge into master 
+=====================
+git checkout master
+git merge <branch name>
 
+=========
+git reset !!!carefull!!!
+=========
+git reset --soft (moves changes back to staging)
+git reset --mixed (moves changes back to the working directory)
+git reset --hard (destructive moves changes to the trash)
 
+example reset back to origin master:
+git log --online (to see hash for origin master)
+git reset --mixed <origin master hash>
+git add .
+git commit -m "title" -m "description"
