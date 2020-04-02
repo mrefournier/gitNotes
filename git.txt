@@ -56,3 +56,36 @@ git diff
 
 run diffmerge tool on unstaged files:
 git difftool 
+
+=======
+git log
+=======
+git log
+
+git log -1 (limits log output)
+
+git log --oneline
+
+git log --stat
+
+git log --patch (detailed view)
+
+=============
+remove a file
+=============
+git rm <file name>
+
+============
+untrack file
+============
+git rm --cached <filename>
+
+===========
+rename file
+===========
+git mv <file name> <new file name>
+
+
+
+
+
