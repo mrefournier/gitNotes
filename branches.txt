@@ -29,3 +29,27 @@ git checkout <traget branch to merge into>
 use merge command:
 git merge <source branch to merge>
 
+=========================
+rebase (advanced feature)
+=========================
+do not use rebase on a public branch!
+clean up history before sharing branches
+
+git log --oneline (get branch history)
+git merge-base <branch name> master (get the original base of <branch name> created from master)
+git rebase -i <commit-sha> (-i is for interactive)
+
+squash the commits you want to rebase into a single commit:
+pick <commit-sha>
+squash <commit-sha>
+squash <commit-sha>
+
+choose the commit message you want to use
+
+pull in changes from master then replay branch commits after
+git rebase master
+
+
+
+
+
