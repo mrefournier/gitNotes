@@ -52,5 +52,7 @@ git rebase master
 cherry picking:
 git cherry-pick
 
+more notes to come...
+
 
 
