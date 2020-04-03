@@ -34,8 +34,12 @@ add all files in directory to be tracked
 git add .
 git commit -m "first commit"
 
-git remote add origin <git address to repo>
-git push origin master
+git clone <remote url> (pull code and setup local branch)
+origin (default name for remote server)
+git remote add <name> <git address to repo> (provide the name  for a remote server)
+git remote -v (list of remote url)
+
+git push <name> master
 
 ==============================
 Files tracked by git
