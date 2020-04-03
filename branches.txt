@@ -51,6 +51,52 @@ pull in changes from master then replay branch commits after
 git rebase master
 
 cherry picking:
-git cherry-pick
+git log --oneline (find the commit you want)
+or
+git log <branch name> --oneline
+
+git checkout <branch name> (where do you want to put the commit? checkout that branch)
+
+git cherry-pick <commit> (perform the cherry-pick to append the commit to head)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 more notes to come....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
